@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/670/265/png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon-thumbnail.png">
+    <link rel="stylesheet" href="todoStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo_app">
+            <h1 class="todolist">
+                To-Do List
+            </h1>
+            <img 
+            src="https://media2.giphy.com/media/PjraOodopBNtdHj2HU/giphy.gif" alt="todolist"
+            class="todo_image">
+            <div class="taskdata">
+                <form>
+                    <input type="text" id="task" autocomplete="off" autofocus>
+                    <button onclick="addTask()">Add Task</button>
+                </form>
+                <div class="taskLeft" >
+                    
+                </div>
+            </div>
+            <div class="list">
+                <ul class="task-list" type="none">
+                   <!-- <li class="checked">task 1<span>❌</span></li>
+                   <li class="checked">task 2</li>
+                   <li class="checked">task 3</li> -->
+                </ul>
+            </div>
+        </div>
+        
+
+    </div>
+  <script src="todoScript.js"></script>  
+</body>
+</html>

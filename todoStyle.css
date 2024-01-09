@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: arial black;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0px;
+    background-image: linear-gradient(to right,#b5dce8,#9db7bf,#637d85);
+    display: flex;
+    justify-content: center;
+   
+}
+.todo_app{
+    height: 400px;
+    width: 350px;
+    background-color:rgb(250, 248, 246);
+    margin-top: 130px;
+    border-radius: 50px;
+    padding: 30px;
+
+    position: relative;
+}
+.todolist{
+    color: #c04f1a;
+    position: absolute;
+    left: 70px;
+    font-family: sans-serif;
+}
+.todo_image{
+    position: absolute;
+    height: 60px;
+    left: 250px;
+    top: 18px;
+}
+.taskdata{
+    margin-top: 70px;
+    height: 40px;
+    width: 100%;
+    background-color: #d4d2bc;
+    border-radius: 50px;
+    position: relative;
+}
+.taskdata input{
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bolder
+}
+.taskdata button{
+    width: 30%;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+   position: absolute;
+    background-color: #d9b691;
+    font-size: 15px;
+    right: 0px;
+    /* cursor: pointer; */
+
+}
+.list{
+   margin-top:  50px;
+    
+}
+.task-list li{
+    padding: 10px 20px 2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+.task-list li::before{
+    content: "";
+    background-image: url('https://cdn-icons-png.flaticon.com/256/71/71397.png');
+    height: 17px;
+    width: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+.task-list li.checked{
+    color: grey;
+    text-decoration: line-through;
+
+}
+.task-list li.checked::before{
+    background-image: url('https://assets.stickpng.com/images/5aa78e207603fc558cffbf19.png');
+    height: 20px;
+    width: 20px;
+}
+
+.task-list li span{
+ position: absolute;
+ right: 0px;
+ cursor: pointer;
+}
+.taskLeft{
+    margin-top: 20px;
+}
+
+
